@@ -120,3 +120,170 @@ ul.mini{margin:.4rem 0 .2rem 1rem}
   .cards.three{grid-template-columns:1fr}
   .kpis{grid-template-columns:1fr}
 }
+/* === HERO LAYOUT FIX === */
+
+.hero-inner {
+  display: grid;
+  grid-template-columns: minmax(0,1fr);
+  gap: 1.5rem;
+}
+
+.hero-media {
+  order: 2;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08);
+  border-radius: .8rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  max-width: 900px;
+}
+
+.hero-img {
+  display: block;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+@media (min-width: 900px) {
+  .hero-inner {
+    grid-template-columns: minmax(0,0.65fr) minmax(0,0.35fr);
+    align-items: center;
+  }
+  .hero-media {
+    order: 1;
+    justify-self: end;
+    max-width: 480px;
+  }
+  .hero-inner > h1,
+  .hero-inner > p.lead,
+  .hero-inner > .outcomes,
+  .hero-inner > .cta-row,
+  .hero-inner > .subtext {
+    order: 0;
+    max-width: 46ch;
+  }
+  .subtext {
+    font-size: .9rem;
+  }
+}
+
+/* Tämä estää sen fiiliksen että "kuva roikkuu irrallaan" ja palauttaa balanssin.
+   Pienellä ruudulla: teksti -> kuva -> CTA -> selite
+   Isolla ruudulla: teksti vasemmalla, kuva oikealla, näyttää konsulttitalon/mckinsey-tyyppiseltä. */
+
+
+/* === WHAT WE DELIVER VISUAL === */
+
+.viz-card {
+  background: var(--panel);
+  border-radius: 1rem;
+  box-shadow: var(--shadow);
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,.06);
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.viz-img {
+  background: #0E1117;
+  border-bottom: 1px solid rgba(255,255,255,.06);
+  position: relative;
+  min-height: 200px;
+  display: grid;
+  place-items: center;
+}
+
+.viz-photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 260px;
+  object-fit: cover;
+}
+
+.viz-overlay {
+  padding: 1rem 1.2rem;
+  font-size: .95rem;
+  background: #0E1117;
+  color: #E8EBFF;
+}
+
+.viz-overlay-title {
+  margin: 0 0 .5rem 0;
+  font-weight: 600;
+  color: var(--fg);
+  font-size: 1rem;
+}
+
+/* Tämä tekee siitä kortista heti "tässä on oikea työ" eikä "demo placeholder". */
+
+
+/* === CARD / MEDIA POLISH === */
+
+.media-frame {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  border-radius: .7rem;
+  overflow: hidden;
+  background: rgba(255,255,255,.03);
+  border: 1px solid rgba(255,255,255,.08); /* pienempi harmaa reuna, näyttää tahalliselta */
+  box-shadow: var(--shadow);
+}
+
+.card-media .card-body {
+  padding-top: .75rem;
+  font-size: .95rem;
+  line-height: 1.45;
+}
+
+.card-media .card-body h3 {
+  margin-top: 0;
+  margin-bottom: .4rem;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: #fff;
+  font-weight: 600;
+}
+
+/* badge spacing tweak */
+.badge,
+.badge.alt {
+  top: .8rem;
+  left: .8rem;
+  border-radius: .5rem;
+  padding: .3rem .6rem;
+  font-size: .7rem;
+  line-height: 1.2;
+  box-shadow: 0 10px 30px rgba(0,0,0,.5);
+  border: 1px solid rgba(0,0,0,.4);
+}
+
+/* This is subtle styling that makes the badges look intentional / premium, not default UI chip. */
+
+
+/* === TYPO + SPACING POLISH === */
+
+.section .container > h2 {
+  margin-bottom: 1rem;
+}
+
+.section p.lead,
+.section > .container > p.lead {
+  max-width: 60ch;
+}
+
+.check li {
+  margin-bottom: .8rem;
+}
+
+/* Mobile breathing room for cards */
+@media (max-width: 560px){
+  .cards.two{
+    grid-template-columns:1fr;
+  }
+  .cards.three{
+    grid-template-columns:1fr;
+  }
+}
