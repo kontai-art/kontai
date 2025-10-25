@@ -3,324 +3,580 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Kontai — Showrooms & Experience Spaces that Think, React & Learn</title>
-  <meta name="description" content="Kontai builds data-driven showrooms & experience spaces that shorten sales cycles, align stakeholders and prove ROI with privacy-first analytics." />
+  <title>Kontai — Immersive Showrooms & Experience Spaces That Prove Your Story</title>
+
+  <meta name="description" content="Kontai builds immersive showrooms and experience spaces that make complex ideas easy to understand — and prove impact with privacy-first analytics." />
   <meta name="theme-color" content="#12131A" />
-  <meta property="og:title" content="Kontai — Showrooms & Experience Spaces" />
-  <meta property="og:description" content="Modular, measurable, privacy-first. Turn complex tech and ESG into decisions — not just demos." />
+
+  <meta property="og:title" content="Kontai — Immersive Showrooms & Experience Spaces" />
+  <meta property="og:description" content="We help you explain innovation, sustainability and infrastructure in a way people actually get — and we measure what works." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://kontai.io/" />
   <meta property="og:image" content="https://kontai.io/assets/img/og-showroom-1200x630.jpg" />
+
   <link rel="stylesheet" href="./styles.css" />
+
+  <!-- Structured data -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "WebPage",
-    "name": "Kontai — Showrooms & Experience Spaces",
-    "description": "Data-driven immersive showrooms and experience spaces with privacy-first analytics.",
+    "name": "Kontai — Immersive Showrooms & Experience Spaces",
+    "description": "Kontai creates data-driven physical experiences that accelerate understanding and decision-making.",
     "publisher": { "@type": "Organization", "name": "Kontai", "url": "https://kontai.io" }
   }
   </script>
 </head>
 <body>
+  <!-- scroll bar + back to top -->
   <div id="scrollProgress" class="scroll-progress" aria-hidden="true"></div>
   <button id="backToTop" class="back-to-top" aria-label="Back to top">↑</button>
 
-<header class="site-header" role="banner">
-  <a class="brand" href="#hero" aria-label="Kontai home">KONTAI</a>
-  <nav class="main-nav" aria-label="Primary">
+  <!-- Header / nav -->
+  <header class="site-header" role="banner">
+    <a class="brand" href="#hero" aria-label="Kontai home">KONTAI</a>
+    <nav class="main-nav" aria-label="Primary">
+      <a href="#whatwedo">What We Do</a>
+      <a href="#who">Who It's For</a>
+      <a href="#products">Products</a>
+      <a href="#why">Why It Matters</a>
+      <a href="#examples">References</a>
+      <a href="#privacy">Analytics & Privacy</a>
+      <a href="#process">Process</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn btn-primary" id="btnDemo">Book a demo</a>
+    </nav>
+
+    <button id="burger" class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+
+  <!-- Mobile nav -->
+  <nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
     <a href="#whatwedo">What We Do</a>
+    <a href="#who">Who It's For</a>
     <a href="#products">Products</a>
     <a href="#why">Why It Matters</a>
     <a href="#examples">References</a>
-    <a href="#tech">Tech</a>
     <a href="#privacy">Analytics & Privacy</a>
-    <a href="#procurement">Procurement</a>
     <a href="#process">Process</a>
     <a href="#faq">FAQ</a>
-    <a href="#contact" class="btn btn-primary" id="btnDemo">Book a demo</a>
+    <a href="#contact" class="btn btn-primary">Book a demo</a>
   </nav>
-  <button id="burger" class="burger" aria-label="Open menu" aria-expanded="false" aria-controls="mobileNav">
-    <span></span><span></span><span></span>
-  </button>
-</header>
 
-<nav id="mobileNav" class="mobile-nav" aria-label="Mobile">
-  <a href="#whatwedo">What We Do</a>
-  <a href="#products">Products</a>
-  <a href="#why">Why It Matters</a>
-  <a href="#examples">References</a>
-  <a href="#tech">Tech</a>
-  <a href="#privacy">Analytics & Privacy</a>
-  <a href="#procurement">Procurement</a>
-  <a href="#process">Process</a>
-  <a href="#faq">FAQ</a>
-  <a href="#contact" class="btn btn-primary">Book a demo</a>
-</nav>
+  <main id="content">
 
-<main id="content">
-  <section id="hero" class="hero" aria-label="Hero">
-    <div class="hero-bg" aria-hidden="true">
-      <div class="particles parallax" data-parallax="0.15"></div>
-      <div class="grid parallax" data-parallax="0.05"></div>
-    </div>
-    <div class="container hero-inner">
-      <h1>Showrooms & <span class="accent">Experience Spaces</span> that Think, React & Learn</h1>
-      <p class="lead">
-        We turn complex tech and ESG into <strong>decision-moving experiences</strong>. Built-in analytics show what resonates — so you can
-        <strong>shorten sales cycles</strong>, <strong>align stakeholders</strong> and <strong>prove ROI</strong>.
-      </p>
-      <ul class="outcomes">
-        <li>▲ Qualified engagement</li>
-        <li>→ Faster consensus</li>
-        <li>✓ Evidence & ROI</li>
-      </ul>
-      <div class="hero-media">
-        <picture>
-          <source type="image/avif" srcset="./assets/img/hero-1920.avif" />
-          <source type="image/webp" srcset="./assets/img/hero-1920.webp" />
-          <img src="./assets/img/hero-1920.jpg" alt="Immersive executive experience space" width="1920" height="1080" loading="eager" decoding="async" />
-        </picture>
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-label="Hero">
+      <div class="hero-bg" aria-hidden="true">
+        <div class="particles parallax" data-parallax="0.15"></div>
+        <div class="grid parallax" data-parallax="0.05"></div>
       </div>
-      <div class="cta-row">
-        <a href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request" class="btn btn-primary">Book a demo</a>
-        <a id="btnRefs" href="#examples" class="btn btn-ghost">See references</a>
-      </div>
-      <div class="subtext">Focus: corporate innovation hubs, utilities & energy, museums/cultural networks, research partners.</div>
-    </div>
-  </section>
 
-  <section id="whatwedo" class="section section-split">
-    <div class="container split">
-      <div class="col">
-        <h2>What We Do</h2>
-        <p>Kontai designs <strong>modular, data-driven showrooms & experience spaces</strong> that make complex ideas intuitive — and measurable.</p>
-        <ul class="check">
-          <li><strong>Interactive storytelling</strong> — motion, light, sound, narrative</li>
-          <li><strong>Live data visualisation</strong> — product, ESG, IoT, research feeds</li>
-          <li><strong>Analytics by design</strong> — footfall, dwell, interaction, recall</li>
+      <div class="container hero-inner">
+        <h1>
+          We build immersive <span class="accent">showrooms & experience spaces</span><br/>
+          that make complex ideas easy to understand.
+        </h1>
+
+        <p class="lead">
+          You’re trying to explain something big — energy transition, climate impact, advanced tech, R&amp;D.
+          We turn that into a physical experience that people can actually feel.
+          Then we <strong>measure what worked</strong>, so you can prove value.
+        </p>
+
+        <ul class="outcomes">
+          <li>▲ Faster stakeholder buy-in</li>
+          <li>→ Clearer story in minutes</li>
+          <li>✓ Evidence for management & funders</li>
         </ul>
-      </div>
-      <div class="col visual">
-        <div class="viz-card viz-dark parallax" data-parallax="0.08">
-          <div class="viz-img hero-gradient" aria-hidden="true"></div>
-          <div class="viz-overlay">
-            <p>Architecture</p>
-            <ul>
-              <li>Modular content blocks</li>
-              <li>Reusable hardware layout</li>
-              <li>Energy-aware operation</li>
-            </ul>
-          </div>
+
+        <div class="hero-media">
+          <picture>
+            <!-- future: hero.mp4 poster or background video -->
+            <img
+              src="./assets/img/hero-1920.jpg"
+              alt="Immersive space with responsive light and data-driven sculpture, viewed as an executive showcase environment"
+              width="1920"
+              height="1080"
+              loading="eager"
+              decoding="async"
+            />
+          </picture>
+        </div>
+
+        <div class="cta-row">
+          <a href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request" class="btn btn-primary">Book a demo</a>
+          <a id="btnRefs" href="#examples" class="btn btn-ghost">See examples</a>
+        </div>
+
+        <div class="subtext">
+          Focus areas: energy & infrastructure / innovation & R&amp;D / sustainability & climate communication / museums & public education.
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="products" class="section alt">
-    <div class="container">
-      <h2>Products</h2>
-      <div class="cards four">
-        <article class="card"><h3>Pilot Kit</h3><p>6–8 weeks. 1–2 modules + analytics baseline. Proves value fast.</p><ul class="mini"><li>Concept → prototype → on-site pilot</li><li>Footfall, dwell, interaction report</li></ul><p class="muted">Typical budget: €XX–XXk</p></article>
-        <article class="card"><h3>Core System</h3><p>Pysyvä tila 3–6 moduulilla. Integraatiot & koulutus.</p><ul class="mini"><li>Operational playbook & SLA</li><li>Content updates & A/B tests</li></ul><p class="muted">Typical budget: €XX–XXXk</p></article>
-        <article class="card"><h3>Touring Kit</h3><p>Keventyvä, kiertävä toteutus tapahtumiin ja roadshow’hin.</p><ul class="mini"><li>Rapid setup, reusable rig</li><li>Event analytics</li></ul><p class="muted">Typical budget: €XX–XXk</p></article>
-        <article class="card"><h3>Insight Layer</h3><p>Analytics + dashboard + content optimisation, privacy-first.</p><ul class="mini"><li>Metabase dashboards</li><li>Integrations (n8n/Infomaniak)</li></ul><p class="muted">Typical budget: €X–XXk / year</p></article>
-      </div>
-    </div>
-  </section>
+    <!-- WHAT WE DO (simple, non-technical) -->
+    <section id="whatwedo" class="section section-split">
+      <div class="container split">
+        <div class="col">
+          <h2>What we actually deliver</h2>
+          <p>
+            We design and build physical spaces and installations that
+            <strong>tell your story</strong>, using light, motion, sound and live data.
+            People step in — and they “get it”.
+          </p>
 
-  <section id="why" class="section">
-    <div class="container">
-      <h2>Why It Matters</h2>
-      <p>PowerPoint tells. A modern showroom or experience space <strong>shows, senses and learns</strong>.</p>
-      <div class="cards three">
-        <article class="card parallax" data-parallax="0.05"><h3>Make it tangible</h3><p>De-risk big ideas by making them graspable in minutes.</p></article>
-        <article class="card parallax" data-parallax="0.05"><h3>Guide decisions</h3><p>Know what lands — update content and layout with evidence.</p></article>
-        <article class="card parallax" data-parallax="0.05"><h3>Prove value</h3><p>Report engagement and learning, not just impressions.</p></article>
-      </div>
-    </div>
-  </section>
+          <ul class="check">
+            <li><strong>Story you can walk into</strong><br/>Not slides. A physical story built around your message.</li>
+            <li><strong>Live data, not stock visuals</strong><br/>We connect to your real metrics, grid data, ESG impact, research feeds.</li>
+            <li><strong>Proof built in</strong><br/>We track what people look at, touch, ask about — without creepy tracking.</li>
+          </ul>
+        </div>
 
-  <section id="examples" class="section">
-    <div class="container">
-      <h2>Selected References</h2>
-      <p class="muted">One delivered project and selected prototypes/in-development works to illustrate approaches across sectors.</p>
-
-      <div class="cards two">
-        <article class="card card-media parallax" data-parallax="0.05">
-          <div class="badge">Delivered</div>
-          <div class="media-frame">
-            <picture>
-              <source type="image/avif" srcset="./assets/img/case-energy-1600.avif" />
-              <source type="image/webp" srcset="./assets/img/case-energy-1600.webp" />
-              <img class="media-img" src="./assets/img/case-energy-1600.png" alt="The Energy Flower" width="1600" height="900" loading="lazy" decoding="async" />
-            </picture>
+        <div class="col visual">
+          <div class="viz-card viz-dark parallax" data-parallax="0.08">
+            <div class="viz-img hero-gradient" aria-hidden="true"></div>
+            <div class="viz-overlay">
+              <p>Designed to evolve</p>
+              <ul>
+                <li>Modular blocks you can rearrange</li>
+                <li>Reusable hardware, not one-off spend</li>
+                <li>Energy-aware operation</li>
+              </ul>
+            </div>
           </div>
-          <div class="card-body"><h3>The Energy Flower (Fingrid)</h3><p>Turns live grid data into a kinetic centerpiece that explains value in seconds. Outcome: clearer stakeholder dialogue.</p></div>
-        </article>
+        </div>
 
-        <article class="card card-media parallax" data-parallax="0.05">
-          <div class="badge alt">Prototype</div>
-          <div class="media-frame">
-            <picture>
-              <source type="image/avif" srcset="./assets/img/case-sea-1600.avif" />
-              <source type="image/webp" srcset="./assets/img/case-sea-1600.webp" />
-              <img class="media-img" src="./assets/img/case-sea-1600.jpg" alt="Climate & Oceans — Concept Study" width="1600" height="900" loading="lazy" decoding="async" />
-            </picture>
-          </div>
-          <div class="card-body"><h3>Climate & Oceans — Concept Study</h3><p>Transforms complex datasets into a shared understanding for partners and sponsors — a faster path to informed decisions.</p></div>
-        </article>
-
-        <article class="card card-media parallax" data-parallax="0.05">
-          <div class="badge alt">Anonymised</div>
-          <div class="media-frame">
-            <picture>
-              <source type="image/avif" srcset="./assets/img/case-currents-1600.avif" />
-              <source type="image/webp" srcset="./assets/img/case-currents-1600.webp" />
-              <img class="media-img" src="./assets/img/case-currents-1600.jpg" alt="Nordic Utility — Pilot (Anonymised)" width="1600" height="900" loading="lazy" decoding="async" />
-            </picture>
-          </div>
-          <div class="card-body"><h3>Nordic Utility — Pilot (Anonymised)</h3><p>Maps attention and dwell to redesign visitor flow and content. Outcome: better conversion through the journey.</p></div>
-        </article>
-
-        <article class="card card-media parallax" data-parallax="0.05">
-          <div class="badge alt">In Development</div>
-          <div class="media-frame">
-            <picture>
-              <source type="image/avif" srcset="./assets/img/case-holo-1600.avif" />
-              <source type="image/webp" srcset="./assets/img/case-holo-1600.webp" />
-              <img class="media-img" src="./assets/img/case-holo-1600.jpg" alt="Embodied Interaction — R&D" width="1600" height="900" loading="lazy" decoding="async" />
-            </picture>
-          </div>
-          <div class="card-body"><h3>Embodied Interaction — R&D</h3><p>Hands-on interfaces to make invisible systems intuitive — ideal for executive buy-in on complex platforms.</p></div>
-        </article>
-
-        <article class="card card-media parallax" data-parallax="0.05">
-          <div class="badge alt">Concept Pilot</div>
-          <div class="media-frame">
-            <picture>
-              <source type="image/avif" srcset="./assets/img/case-sustain-1600.avif" />
-              <source type="image/webp" srcset="./assets/img/case-sustain-1600.webp" />
-              <img class="media-img" src="./assets/img/case-sustain-1600.jpg" alt="Sustainability Hub — Concept Pilot" width="1600" height="900" loading="lazy" decoding="async" />
-            </picture>
-          </div>
-          <div class="card-body"><h3>Sustainability Hub — Concept Pilot (Anonymised)</h3><p>ESG narratives that move beyond slides: live metrics in space to engage employees, partners and regulators.</p></div>
-        </article>
-
-        <article class="card card-media parallax" data-parallax="0.05">
-          <div class="badge alt">Prototype</div>
-          <div class="media-frame">
-            <picture>
-              <source type="image/avif" srcset="./assets/img/case-lab-1600.avif" />
-              <source type="image/webp" srcset="./assets/img/case-lab-1600.webp" />
-              <img class="media-img" src="./assets/img/case-lab-1600.jpg" alt="University Lab — Data Sculpture Prototype" width="1600" height="900" loading="lazy" decoding="async" />
-            </picture>
-          </div>
-          <div class="card-body"><h3>University Lab — Data Sculpture Prototype</h3><p>Makes research tangible for industry partners — easier tech transfer, clearer funding conversations.</p></div>
-        </article>
       </div>
+    </section>
 
-      <p class="muted kpi-note">Labels “Prototype”, “In Development”, “Concept Pilot” and “Anonymised” indicate studies, pilots or ongoing works. “Delivered” marks completed delivery.</p>
-    </div>
-  </section>
+    <!-- WHO IT'S FOR -->
+    <section id="who" class="section alt">
+      <div class="container">
+        <h2>Who it’s for</h2>
 
-  <section id="tech" class="section alt">
-    <div class="container">
-      <h2>Technology Stack</h2>
-      <p>Unreal Engine · TouchDesigner · Notch · Ventuz · modular LED/projection · IoT/API feeds · motion/vision sensors · spatial audio · custom analytics dashboards.</p>
-      <p><strong>Scales</strong> from compact pop-ups to large installations.</p>
-    </div>
-  </section>
+        <div class="cards three">
+          <article class="card">
+            <h3>Energy & Infrastructure</h3>
+            <p>
+              You need public trust, regulator trust and political trust. We make invisible systems —
+              grid balance, transition plans — visible in a way people accept.
+            </p>
+          </article>
 
-  <section id="privacy" class="section">
-    <div class="container">
-      <h2>Analytics & Privacy</h2>
-      <div class="cards three">
-        <article class="card"><h3>Privacy-first</h3><p>Anonymous by default (footfall, dwell, interaction). Consent UX if needed. DPIA support.</p></article>
-        <article class="card"><h3>EU hosting</h3><p>Infomaniak/CH/EU. Exports (CSV/JSON). Dashboards in Metabase. Integrations via n8n.</p></article>
-        <article class="card"><h3>Evidence, not creepiness</h3><p>Measure impact transparently — turn insights into v2/v3 upgrades.</p></article>
+          <article class="card">
+            <h3>Innovation / R&amp;D / Advanced Tech</h3>
+            <p>
+              You’re selling something hard to explain. We turn “abstract platform” into something
+              a decision-maker can point at and say: “I understand this now.”
+            </p>
+          </article>
+
+          <article class="card">
+            <h3>Sustainability & Climate Communication</h3>
+            <p>
+              You’ve made real impact, but nobody believes a PDF.
+              We visualise ESG, CO₂, biodiversity or oceans data in the room — live.
+            </p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="procurement" class="section alt">
-    <div class="container">
-      <h2>Procurement-ready</h2>
-      <div class="cards three">
-        <article class="card"><h3>SLA & Support</h3><p>Clear uptime targets, response windows and onsite options.</p></article>
-        <article class="card"><h3>Safety & IP</h3><p>Electrical/fire compliance, content licensing and IP terms in plain language.</p></article>
-        <article class="card"><h3>Documentation</h3><p>Risk assessment, install drawings, maintenance handbook, KPI reports.</p></article>
+    <!-- PRODUCTS -->
+    <section id="products" class="section">
+      <div class="container">
+        <h2>How you can start</h2>
+
+        <div class="cards four">
+          <article class="card">
+            <h3>Pilot Kit</h3>
+            <p>Small but real. One or two interactive modules installed on-site in ~6–8 weeks.</p>
+            <ul class="mini">
+              <li>Concept → prototype → demo in your space</li>
+              <li>Engagement & dwell report</li>
+            </ul>
+            <p class="muted">Typical budget: €XX–XXk</p>
+          </article>
+
+          <article class="card">
+            <h3>Core Space</h3>
+            <p>Your permanent showroom / experience space. 3–6 modules, training and operating playbook.</p>
+            <ul class="mini">
+              <li>Designed for exec visits, partners, media</li>
+              <li>Content updates and A/B message testing</li>
+            </ul>
+            <p class="muted">Typical budget: €XX–XXXk</p>
+          </article>
+
+          <article class="card">
+            <h3>Touring Kit</h3>
+            <p>A movable version for events, conferences and roadshows. Packs fast, installs fast.</p>
+            <ul class="mini">
+              <li>Reusable rig</li>
+              <li>Event analytics</li>
+            </ul>
+            <p class="muted">Typical budget: €XX–XXk</p>
+          </article>
+
+          <article class="card">
+            <h3>Insight Layer</h3>
+            <p>Privacy-first analytics and dashboards. What did people care about most?</p>
+            <ul class="mini">
+              <li>Anonymous footfall & dwell tracking</li>
+              <li>Metabase dashboard, Infomaniak hosting</li>
+            </ul>
+            <p class="muted">Typical budget: €X–XXk / year</p>
+          </article>
+        </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="process" class="section">
-    <div class="container">
-      <h2>How We Work</h2>
-      <div class="timeline">
-        <div class="step"><span>1–2 w</span><strong>Discovery</strong><p>Goals, audiences, datasets, constraints.</p></div>
-        <div class="step"><span>2–3 w</span><strong>Concept</strong><p>Experience map, story beats, system sketch.</p></div>
-        <div class="step"><span>2–4 w</span><strong>Prototype</strong><p>Test modules + analytics baseline.</p></div>
-        <div class="step"><span>1–2 w</span><strong>Install</strong><p>Onsite setup, training, playbook.</p></div>
-        <div class="step"><span>ongoing</span><strong>Operate & Learn</strong><p>Dashboards, updates, v2/v3 roadmap.</p></div>
-      </div>
-      <p><a href="mailto:tomi.paijo@kontai.art?subject=Pilot%20Kit%20one-pager" class="btn btn-ghost">Request the Pilot Kit one-pager</a></p>
-    </div>
-  </section>
-
-  <section id="evidence" class="section">
-    <div class="container">
-      <h2>Evidence</h2>
-      <div class="kpis">
-        <div class="kpi parallax" data-parallax="0.03"><span class="num">-30–50%</span><span class="lbl">faster stakeholder alignment*</span></div>
-        <div class="kpi parallax" data-parallax="0.03"><span class="num">3.4×</span><span class="lbl">interaction vs. baseline</span></div>
-        <div class="kpi parallax" data-parallax="0.03"><span class="num">+22%</span><span class="lbl">message recall</span></div>
-        <div class="kpi parallax" data-parallax="0.03"><span class="num">↓18%</span><span class="lbl">ops waste (modular)</span></div>
-      </div>
-      <p class="muted kpi-note">*Directionally based on prototypes; we report your installation’s real numbers.</p>
-    </div>
-  </section>
-
-  <section id="faq" class="section alt">
-    <div class="container">
-      <h2>FAQ</h2>
-      <div class="faq">
-        <details><summary>How long does a pilot take?</summary><p>Typically 6–8 weeks from Discovery to on-site pilot.</p></details>
-        <details><summary>What budgets are we talking about?</summary><p>Pilots from €XXk; Core Systems from €XX–XXXk depending on scale and tech.</p></details>
-        <details><summary>Where is the data hosted?</summary><p>EU (Infomaniak/CH). Anonymous by default. Exports and dashboards provided.</p></details>
-        <details><summary>Do you support after launch?</summary><p>Yes — SLA with response windows, content updates and periodic KPI reviews.</p></details>
-      </div>
-    </div>
-  </section>
-
-  <section id="contact" class="section contact">
-    <div class="container">
-      <h2>Ready to turn complexity into conviction?</h2>
-      <div class="contact-only">
-        <p><strong>Email:</strong> <a href="mailto:tomi.paijo@kontai.art">tomi.paijo@kontai.art</a></p>
-        <p><strong>Locations:</strong> Helsinki · Stockholm</p>
+    <!-- WHY IT MATTERS -->
+    <section id="why" class="section">
+      <div class="container">
+        <h2>Why this works</h2>
         <p>
-          <a class="btn btn-primary" href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request">Book a demo</a>
-          <a class="btn btn-ghost" href="#products">See product options</a>
+          PowerPoint tells. A physical experience convinces.
+          After 5 minutes in the room, people stop arguing about <em>whether</em> something matters,
+          and start asking “OK, what do we need to do next?”
+        </p>
+
+        <div class="cards three">
+          <article class="card parallax" data-parallax="0.05">
+            <h3>Make it real</h3>
+            <p>You collapse months of explanation into one shared moment everyone understands.</p>
+          </article>
+
+          <article class="card parallax" data-parallax="0.05">
+            <h3>Align faster</h3>
+            <p>Executives, partners, city officials — all leave with the same mental picture.</p>
+          </article>
+
+          <article class="card parallax" data-parallax="0.05">
+            <h3>Prove impact</h3>
+            <p>You get numbers, not vibes. We show what people engaged with and remembered.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- REFERENCES -->
+    <section id="examples" class="section">
+      <div class="container">
+        <h2>Selected references</h2>
+        <p class="muted">
+          One delivered project and selected prototypes / in-development work. In some cases,
+          client name is anonymised but the scenario is real.
+        </p>
+
+        <div class="cards two">
+
+          <!-- Fingrid -->
+          <article class="card card-media parallax" data-parallax="0.05">
+            <div class="badge">Delivered</div>
+            <div class="media-frame">
+              <picture>
+                <img
+                  class="media-img"
+                  src="./assets/img/case-energy-1600.png"
+                  alt="The Energy Flower — kinetic light sculpture driven by live grid data"
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3>The Energy Flower (Fingrid)</h3>
+              <p>
+                Finland’s national grid operator wanted to make “energy flow” visible to non-engineers.
+                We turned live grid data into a kinetic light sculpture. People could literally
+                see the system breathing.
+              </p>
+              <p><strong>Impact:</strong> faster, calmer stakeholder conversations.</p>
+            </div>
+          </article>
+
+          <!-- Climate & Oceans -->
+          <article class="card card-media parallax" data-parallax="0.05">
+            <div class="badge alt">Prototype</div>
+            <div class="media-frame">
+              <picture>
+                <img
+                  class="media-img"
+                  src="./assets/img/case-sea-1600.jpg"
+                  alt="Prototype visualising oceans and climate data as layered light and motion in space"
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3>Climate & Oceans — Concept Study</h3>
+              <p>
+                Ocean and climate data is overwhelming. We built an immersive layer-cake
+                of light, depth and movement so partners and sponsors could immediately see:
+                “Here’s what’s changing, here’s why it matters.”
+              </p>
+              <p><strong>Use case:</strong> funding, partnerships, public engagement.</p>
+            </div>
+          </article>
+
+          <!-- Nordic Utility (anonymised) -->
+          <article class="card card-media parallax" data-parallax="0.05">
+            <div class="badge alt">Anonymised</div>
+            <div class="media-frame">
+              <picture>
+                <img
+                  class="media-img"
+                  src="./assets/img/case-currents-1600.jpg"
+                  alt="Large-scale energy visitor centre flow mapping visual"
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3>Nordic Utility — Visitor Flow Pilot</h3>
+              <p>
+                The client needed to redesign how visitors move through an energy visitor centre.
+                We mapped attention hotspots, dwell time and confusion points.
+              </p>
+              <p><strong>Impact:</strong> clearer story path → better conversion through the space.</p>
+            </div>
+          </article>
+
+          <!-- Embodied Interaction -->
+          <article class="card card-media parallax" data-parallax="0.05">
+            <div class="badge alt">In Development</div>
+            <div class="media-frame">
+              <picture>
+                <img
+                  class="media-img"
+                  src="./assets/img/case-holo-1600.jpg"
+                  alt="Embodied interaction R&D concept: touchless interface and spatial visual feedback"
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3>Embodied Interaction — R&amp;D</h3>
+              <p>
+                Executives can literally “touch” an invisible system — a data platform, an AI model,
+                an infrastructure layer — and see it respond. Ideal for winning senior buy-in fast.
+              </p>
+            </div>
+          </article>
+
+          <!-- Sustainability Hub -->
+          <article class="card card-media parallax" data-parallax="0.05">
+            <div class="badge alt">Concept Pilot</div>
+            <div class="media-frame">
+              <picture>
+                <img
+                  class="media-img"
+                  src="./assets/img/case-sustain-1600.jpg"
+                  alt="Sustainability hub concept: ESG and climate metrics visualised as living surfaces"
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3>Sustainability Hub — Concept Pilot</h3>
+              <p>
+                ESG and sustainability teams struggle to make impact feel real.
+                We turn CO₂, biodiversity or efficiency metrics into an environment
+                you can stand inside — not just look at in a PDF.
+              </p>
+            </div>
+          </article>
+
+          <!-- University Lab -->
+          <article class="card card-media parallax" data-parallax="0.05">
+            <div class="badge alt">Prototype</div>
+            <div class="media-frame">
+              <picture>
+                <img
+                  class="media-img"
+                  src="./assets/img/case-lab-1600.jpg"
+                  alt="University research lab prototype: living data sculpture used in partner briefings"
+                  width="1600"
+                  height="900"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="card-body">
+              <h3>University Lab — Data Sculpture Prototype</h3>
+              <p>
+                Research partners often don’t “see” the value.
+                We built a physical data sculpture driven by live research feeds,
+                so industry partners could understand in 30 seconds what normally
+                takes a 30-page deck.
+              </p>
+              <p><strong>Use case:</strong> tech transfer and funding conversations.</p>
+            </div>
+          </article>
+
+        </div>
+
+        <p class="muted kpi-note">
+          “Prototype”, “In Development”, “Concept Pilot” and “Anonymised” = early-stage, confidential or ongoing work.
+          “Delivered” = completed delivery.
         </p>
       </div>
+    </section>
+
+    <!-- ANALYTICS & PRIVACY -->
+    <section id="privacy" class="section alt">
+      <div class="container">
+        <h2>Analytics & privacy (built in)</h2>
+
+        <div class="cards three">
+          <article class="card">
+            <h3>Anonymous by default</h3>
+            <p>We measure interest without facial ID or personal tracking. You get numbers — not problems.</p>
+          </article>
+
+          <article class="card">
+            <h3>Hosted in EU</h3>
+            <p>Data stays in EU/CH infrastructure (Infomaniak). Dashboards in Metabase. Integrations via n8n. Export as CSV or JSON.</p>
+          </article>
+
+          <article class="card">
+            <h3>Proof for decision-makers</h3>
+            <p>After launch, you know what message landed. That’s gold for board, funders, press, regulators.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROCESS -->
+    <section id="process" class="section">
+      <div class="container">
+        <h2>How we work</h2>
+
+        <div class="timeline">
+          <div class="step">
+            <span>1–2 w</span>
+            <strong>Discovery</strong>
+            <p>We listen. Goals, audience, blockers, politics, risk.</p>
+          </div>
+
+          <div class="step">
+            <span>2–3 w</span>
+            <strong>Concept</strong>
+            <p>We map the physical story: what people feel, see, understand.</p>
+          </div>
+
+          <div class="step">
+            <span>2–4 w</span>
+            <strong>Pilot / Prototype</strong>
+            <p>We build test modules and install them on-site or in a controlled environment.</p>
+          </div>
+
+          <div class="step">
+            <span>1–2 w</span>
+            <strong>Install</strong>
+            <p>We set up the real thing, train your team, hand over playbook & safety docs.</p>
+          </div>
+
+          <div class="step">
+            <span>ongoing</span>
+            <strong>Operate & Learn</strong>
+            <p>You get dashboards, content updates and “what to improve next” advice.</p>
+          </div>
+        </div>
+
+        <p>
+          <a href="mailto:tomi.paijo@kontai.art?subject=Pilot%20Kit%20one-pager" class="btn btn-ghost">
+            Request the Pilot Kit one-pager
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="section alt">
+      <div class="container">
+        <h2>FAQ</h2>
+
+        <div class="faq">
+          <details>
+            <summary>How long does a pilot take?</summary>
+            <p>Usually 6–8 weeks from first conversation to something people can stand in and react to.</p>
+          </details>
+
+          <details>
+            <summary>What budgets are we talking about?</summary>
+            <p>Pilots typically start around tens of thousands. Full permanent spaces land in the hundreds of thousands depending on scale, safety and integration.</p>
+          </details>
+
+          <details>
+            <summary>Where is the data hosted?</summary>
+            <p>EU / Switzerland (Infomaniak). We don't default to invasive tracking. We can generate anonymised impact reports for management and funders.</p>
+          </details>
+
+          <details>
+            <summary>Do you support after launch?</summary>
+            <p>Yes. You get an operating playbook, SLA options and iterative updates (content, narrative, layout, analytics).</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section contact">
+      <div class="container">
+        <h2>Ready to make your story tangible?</h2>
+
+        <div class="contact-only">
+          <p><strong>Email:</strong> <a href="mailto:tomi.paijo@kontai.art">tomi.paijo@kontai.art</a></p>
+          <p><strong>Locations:</strong> Helsinki · Stockholm · Hamburg</p>
+
+          <p>
+            <a class="btn btn-primary" href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request">
+              Book a demo
+            </a>
+            <a class="btn btn-ghost" href="#products">
+              See product options
+            </a>
+          </p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer" role="contentinfo">
+    <div class="container foot">
+      <span>© <span id="year"></span> Kontai</span>
+      <nav class="foot-nav">
+        <a href="#whatwedo">What We Do</a>
+        <a href="#who">Who It’s For</a>
+        <a href="#privacy">Privacy</a>
+        <a href="#process">Process</a>
+        <a href="#contact">Contact</a>
+      </nav>
     </div>
-  </section>
-</main>
+  </footer>
 
-<footer class="site-footer" role="contentinfo">
-  <div class="container foot">
-    <span>© <span id="year"></span> Kontai</span>
-    <nav class="foot-nav">
-      <a href="#whatwedo">What We Do</a>
-      <a href="#products">Products</a>
-      <a href="#privacy">Privacy</a>
-      <a href="#process">Process</a>
-      <a href="#contact">Contact</a>
-    </nav>
-  </div>
-</footer>
-
-<script src="./app.js"></script>
+  <script src="./app.js"></script>
 </body>
 </html>
