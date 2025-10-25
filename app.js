@@ -1,4 +1,4 @@
-// === Fade-in on scroll ===
+// Fade-in blocks
 const fadeBlocks = [...document.querySelectorAll('.fade-block')];
 const fadeObs = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
@@ -10,7 +10,7 @@ const fadeObs = new IntersectionObserver(entries=>{
 },{threshold:0.2});
 fadeBlocks.forEach(el=>fadeObs.observe(el));
 
-// === Smooth scroll for internal links ===
+// Smooth scroll for internal nav
 document.querySelectorAll('a[href^="#"]').forEach(link=>{
   link.addEventListener('click',e=>{
     const target=document.querySelector(link.getAttribute('href'));
