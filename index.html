@@ -1,205 +1,412 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- BASIC META -->
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>KONTAI — Showrooms & Experience Spaces</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kontai — Immersive Showrooms & Experience Spaces</title>
+  <meta name="description" content="Kontai builds immersive showrooms and experience spaces that make complex ideas easy to understand — and prove impact with privacy-first analytics." />
+  <meta name="theme-color" content="#0B0D12" />
+
+  <!-- OPEN GRAPH / SOCIAL -->
+  <meta property="og:title" content="Kontai — Immersive Showrooms & Experience Spaces" />
+  <meta property="og:description" content="We turn energy, climate and advanced tech into physical experiences decision-makers can actually feel — and we prove what worked." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://kontai.io/" />
+  <meta property="og:image" content="https://kontai.io/assets/img/og-showroom-1200x630.jpg" />
+
+  <!-- SCHEMA / SEARCH ENGINES -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Kontai",
+    "url": "https://kontai.io",
+    "description": "Kontai builds data-driven immersive showrooms and experience spaces to align stakeholders around energy, climate and complex innovation.",
+    "areaServed": "Global",
+    "contactPoint": [{
+      "@type": "ContactPoint",
+      "contactType": "Business development",
+      "email": "tomi.paijo@kontai.art",
+      "availableLanguage": ["English"]
+    }]
+  }
+  </script>
+
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
 </head>
 
 <body>
+
 <header class="site-header">
   <div class="container nav">
     <a href="#hero" class="logo">KONTAI</a>
-    <nav class="mainnav">
+
+    <nav class="mainnav" aria-label="Main">
       <a href="#story">What We Do</a>
-      <a href="#examples">References</a>
       <a href="#trust">Procurement</a>
+      <a href="#examples">References</a>
       <a href="#contact">Contact</a>
     </nav>
-    <a href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request" class="btn btn-primary small">Book a demo</a>
+
+    <a href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request"
+       class="btn btn-primary small">
+      Book a demo
+    </a>
   </div>
 </header>
 
+
 <main id="content">
 
-<!-- ================= HERO ================= -->
-<section class="scene-hero" id="hero">
-  <div class="scene-hero-bg">
-    <img src="./assets/img/hero-1920.jpg"
-         alt="Immersive executive showcase environment with responsive light and live data sculpture"
-         class="scene-hero-img" />
-    <div class="scene-hero-gradient"></div>
-  </div>
-
-  <div class="scene-hero-inner container">
-    <h1 class="scene-hero-headline">
-      We build immersive <span class="accent">showrooms & experience spaces</span><br/>
-      that make complex ideas easy to understand.
-    </h1>
-
-    <p class="scene-hero-lead">
-      You’re explaining something big — energy transition, climate impact, a complex platform.  
-      We turn it into a physical experience people can feel — and <strong>prove what worked</strong>.
-    </p>
-
-    <ul class="scene-hero-points">
-      <li>▲ Faster stakeholder buy-in</li>
-      <li>→ Clearer story in minutes</li>
-      <li>✓ Evidence for management & funders</li>
-    </ul>
-
-    <div class="scene-hero-cta">
-      <a href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request" class="btn btn-primary">Book a demo</a>
-      <a href="#story" class="btn btn-ghost">See how it works ↓</a>
+  <!-- ================= HERO ================= -->
+  <section class="scene-hero" id="hero">
+    <div class="scene-hero-bg">
+      <img
+        src="./assets/img/hero-1920.jpg"
+        alt="Immersive executive showcase environment with responsive light and live data sculpture"
+        class="scene-hero-img"
+      />
+      <div class="scene-hero-gradient"></div>
     </div>
 
-    <div class="scene-hero-footnote">
-      Energy & Infrastructure · Innovation · Climate & Sustainability · Public Education
-    </div>
-  </div>
-</section>
+    <div class="scene-hero-inner container">
+      <h1 class="scene-hero-headline">
+        We build immersive <span class="accent">showrooms & experience spaces</span><br/>
+        that make complex ideas easy to understand.
+      </h1>
 
-<!-- ================= STICKY STORY ================= -->
-<section class="scene-sticky" id="story">
-  <div class="scene-sticky-inner container">
-    <aside class="scene-sticky-left">
-      <h2>What we deliver</h2>
-      <p class="sticky-intro">
-        Physical installations that tell your story using light, motion, sound and live data.  
-        People step in — and they “get it”.
+      <p class="scene-hero-lead">
+        You’re explaining something big — energy transition, climate impact, an advanced platform.
+        We turn that into a physical experience people can feel.
+        Then we <strong>measure what worked</strong>, so you can prove value.
       </p>
-      <p class="sticky-small">
-        Built for clarity, credibility and measurable impact.
+
+      <ul class="scene-hero-points">
+        <li>▲ Faster stakeholder buy-in</li>
+        <li>→ Clearer story in minutes</li>
+        <li>✓ Evidence for management & funders</li>
+      </ul>
+
+      <div class="scene-hero-cta">
+        <a href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request"
+           class="btn btn-primary">Book a demo</a>
+        <a href="#story" class="btn btn-ghost">See how it works ↓</a>
+      </div>
+
+      <div class="scene-hero-footnote">
+        Energy & Infrastructure · Innovation & R&amp;D · Climate & Sustainability · Public Education
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= STICKY STORY ================= -->
+  <section class="scene-sticky" id="story">
+    <div class="scene-sticky-inner container">
+
+      <!-- left column stays in view on desktop -->
+      <aside class="scene-sticky-left">
+        <h2>What we deliver</h2>
+
+        <p class="sticky-intro">
+          We design and build physical installations that tell your story using light,
+          motion, sound and live data. People step in — and they “get it”.
+        </p>
+
+        <p class="sticky-small">
+          Built for clarity, credibility and measurable impact.
+        </p>
+      </aside>
+
+      <!-- right column scrolls as steps -->
+      <div class="scene-sticky-right">
+
+        <!-- STEP 1 -->
+        <section class="sticky-step fade-block">
+          <div class="sticky-media-frame">
+            <img
+              src="./assets/img/case-currents-1600.jpg"
+              alt="Immersive data space with flowing fieldlines and vertical light pillars"
+              class="sticky-media-img"
+            />
+          </div>
+          <div class="sticky-copy">
+            <h3>Story you can walk into</h3>
+            <p>
+              Not slides. A physical story around your message.
+              We make the invisible system visible — grid balance, AI pipeline,
+              sustainability work — whatever you can’t explain in PowerPoint.
+            </p>
+          </div>
+        </section>
+
+        <!-- STEP 2 -->
+        <section class="sticky-step fade-block">
+          <div class="sticky-media-frame">
+            <img
+              src="./assets/img/case-sea-1600.jpg"
+              alt="Layered light and motion visualising climate & oceans data"
+              class="sticky-media-img"
+            />
+          </div>
+          <div class="sticky-copy">
+            <h3>Live data, not stock visuals</h3>
+            <p>
+              We connect to your real metrics: grid data, ESG, biodiversity, research feeds.
+              People don’t argue with live reality. They align around it.
+            </p>
+          </div>
+        </section>
+
+        <!-- STEP 3 -->
+        <section class="sticky-step fade-block">
+          <div class="sticky-media-frame">
+            <img
+              src="./assets/img/case-energy-1600.png"
+              alt="Kinetic light sculpture driven by live grid data"
+              class="sticky-media-img"
+            />
+          </div>
+          <div class="sticky-copy">
+            <h3>Proof built in</h3>
+            <p>
+              We quietly measure attention and engagement (privacy-first, EU-hosted).
+              You walk away with evidence of what resonated — perfect for board,
+              funders, regulators and press.
+            </p>
+          </div>
+        </section>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================= TRUST / PROCUREMENT ================= -->
+  <section class="scene-trust" id="trust">
+    <div class="container fade-block">
+      <h2>Procurement & Trust built in</h2>
+
+      <p class="trust-lead">
+        Working with public bodies, utilities and research institutions means compliance matters.
+        We design for that from day one.
       </p>
-    </aside>
 
-    <div class="scene-sticky-right">
-      <section class="sticky-step fade-block">
-        <div class="sticky-media-frame">
-          <img src="./assets/img/case-currents-1600.jpg"
-               alt="Immersive data space with flowing fieldlines"
-               class="sticky-media-img"/>
+      <div class="trust-grid">
+        <div class="trust-item">
+          <h3>✔ EU hosting & data privacy</h3>
+          <p>
+            Analytics run on EU / CH infrastructure. GDPR-first. 
+            No default US data flows. No invasive tracking.
+          </p>
         </div>
-        <div class="sticky-copy">
-          <h3>Story you can walk into</h3>
-          <p>Not slides — a physical story around your message.  
-             We make the invisible system visible — grid balance, AI pipeline, sustainability work.</p>
-        </div>
-      </section>
 
-      <section class="sticky-step fade-block">
-        <div class="sticky-media-frame">
-          <img src="./assets/img/case-sea-1600.jpg"
-               alt="Layered light and motion visualising climate & oceans data"
-               class="sticky-media-img"/>
+        <div class="trust-item">
+          <h3>✔ Safety & technical docs</h3>
+          <p>
+            We ship standard safety, install and maintenance documentation
+            ready for museum, expo and corporate environments.
+          </p>
         </div>
-        <div class="sticky-copy">
-          <h3>Live data, not stock visuals</h3>
-          <p>Connected to your real metrics: grid data, ESG, biodiversity.  
-             People don’t argue with live reality — they align around it.</p>
-        </div>
-      </section>
 
-      <section class="sticky-step fade-block">
-        <div class="sticky-media-frame">
-          <img src="./assets/img/case-energy-1600.png"
-               alt="Kinetic light sculpture driven by live grid data"
-               class="sticky-media-img"/>
+        <div class="trust-item">
+          <h3>✔ IP & licensing clarity</h3>
+          <p>
+            Clear ownership and licensing terms from day one.
+            No “who owns the content?” panic later.
+          </p>
         </div>
-        <div class="sticky-copy">
-          <h3>Proof built in</h3>
-          <p>We measure attention and engagement (privacy-first, EU-hosted).  
-             You walk away with evidence of what resonated — ideal for board and funders.</p>
+
+        <div class="trust-item">
+          <h3>✔ Procurement-ready model</h3>
+          <p>
+            Transparent scope, line-item pricing, service levels, reporting.
+            Compatible with public tendering and internal approval chains.
+          </p>
         </div>
-      </section>
-    </div>
-  </div>
-</section>
-
-<!-- ================= TRUST / PROCUREMENT ================= -->
-<section class="scene-trust" id="trust">
-  <div class="container fade-block">
-    <h2>Procurement & Trust Built In</h2>
-    <p class="trust-lead">
-      Working with public bodies, utilities and R&amp;D institutions means compliance matters.
-      Our framework is designed for that.
-    </p>
-
-    <div class="trust-grid">
-      <div class="trust-item">
-        <h3>✔ EU Hosting &amp; Data Privacy</h3>
-        <p>All analytics run on EU servers under GDPR. No external tracking, no US data flows.</p>
       </div>
-      <div class="trust-item">
-        <h3>✔ Safety &amp; Technical Docs</h3>
-        <p>We deliver standard safety and installation documentation ready for museum, expo and corporate environments.</p>
-      </div>
-      <div class="trust-item">
-        <h3>✔ IP &amp; Contract Clarity</h3>
-        <p>Clear ownership and licensing terms from day one — no hidden rights issues later.</p>
-      </div>
-      <div class="trust-item">
-        <h3>✔ Procurement-Ready Structure</h3>
-        <p>Registered EU supplier entity, transparent pricing, fixed deliverables and reporting compatible with public tenders.</p>
+
+      <div class="trust-cta">
+        <a
+          href="mailto:tomi.paijo@kontai.art?subject=Compliance%20documentation%20request"
+          class="btn btn-primary"
+        >
+          Request compliance package
+        </a>
       </div>
     </div>
+  </section>
 
-    <div class="trust-cta">
-      <a href="mailto:tomi.paijo@kontai.art?subject=Compliance%20documentation" class="btn btn-primary">Request our compliance package</a>
+
+  <!-- ================= REFERENCES / CASES ================= -->
+  <section class="scene-cases" id="examples">
+    <div class="container">
+      <h2 class="cases-head">Selected References</h2>
+
+      <p class="cases-lead">
+        Delivered projects and prototypes.  
+        Some client names are anonymised, but the situations are real.
+      </p>
+
+      <!-- CASE 1: Fingrid -->
+      <article class="case-block fade-block">
+        <div class="case-badge delivered">Delivered</div>
+        <div class="case-media">
+          <img
+            src="./assets/img/case-energy-1600.png"
+            alt="The Energy Flower — kinetic sculpture visualising live grid data"
+          />
+        </div>
+        <div class="case-copy">
+          <h3>The Energy Flower (Fingrid)</h3>
+          <p>
+            Finland’s national grid operator wanted to make “energy flow”
+            visible to non-engineers. We turned live grid data into a kinetic
+            light sculpture so people could literally see the system breathing.
+          </p>
+          <p class="impact">
+            <strong>Impact:</strong> faster, calmer stakeholder dialogue.
+          </p>
+        </div>
+      </article>
+
+      <!-- CASE 2: Climate & Oceans -->
+      <article class="case-block fade-block">
+        <div class="case-badge proto">Prototype</div>
+        <div class="case-media">
+          <img
+            src="./assets/img/case-sea-1600.jpg"
+            alt="Immersive oceans / climate visualisation environment"
+          />
+        </div>
+        <div class="case-copy">
+          <h3>Climate &amp; Oceans — Concept Study</h3>
+          <p>
+            Ocean and climate data is overwhelming.
+            We built an immersive layer-cake of light, depth and movement
+            so sponsors and partners could instantly see:
+            “here’s what’s changing, here’s why it matters.”
+          </p>
+          <p class="impact">
+            <strong>Use case:</strong> funding, partnerships, public engagement.
+          </p>
+        </div>
+      </article>
+
+      <!-- CASE 3: Nordic Utility -->
+      <article class="case-block fade-block">
+        <div class="case-badge anon">Anonymised</div>
+        <div class="case-media">
+          <img
+            src="./assets/img/case-currents-1600.jpg"
+            alt="Visitor flow mapping environment for a Nordic utility"
+          />
+        </div>
+        <div class="case-copy">
+          <h3>Nordic Utility — Visitor Flow Pilot</h3>
+          <p>
+            The client needed to redesign how visitors move through
+            an energy visitor centre. We mapped hotspots, dwell time
+            and confusion points along the journey.
+          </p>
+          <p class="impact">
+            <strong>Impact:</strong> clearer story path → better conversion.
+          </p>
+        </div>
+      </article>
+
+      <!-- CASE 4: Embodied Interaction -->
+      <article class="case-block fade-block">
+        <div class="case-badge indev">In Development</div>
+        <div class="case-media">
+          <img
+            src="./assets/img/case-holo-1600.jpg"
+            alt="Embodied interaction: touchless interface and spatial feedback"
+          />
+        </div>
+        <div class="case-copy">
+          <h3>Embodied Interaction — R&amp;D</h3>
+          <p>
+            Executives can literally “touch” an invisible system — AI,
+            a data platform, an infrastructure layer — and see it respond.
+            That helps secure senior buy-in fast.
+          </p>
+          <p class="impact">
+            <strong>Use case:</strong> board / executive briefing for complex tech.
+          </p>
+        </div>
+      </article>
+
+      <!-- CASE 5: Sustainability Hub -->
+      <article class="case-block fade-block">
+        <div class="case-badge concept">Concept Pilot</div>
+        <div class="case-media">
+          <img
+            src="./assets/img/case-sustain-1600.jpg"
+            alt="Sustainability hub concept using ESG metrics as living surfaces"
+          />
+        </div>
+        <div class="case-copy">
+          <h3>Sustainability Hub — Concept Pilot</h3>
+          <p>
+            ESG and sustainability teams struggle to make impact feel real.
+            We turn CO₂, biodiversity or efficiency metrics into an environment
+            you can stand inside — not just a PDF.
+          </p>
+          <p class="impact">
+            <strong>Use case:</strong> internal alignment, regulatory credibility,
+            employer brand.
+          </p>
+        </div>
+      </article>
+
+      <!-- CASE 6: University Lab -->
+      <article class="case-block fade-block">
+        <div class="case-badge proto">Prototype</div>
+        <div class="case-media">
+          <img
+            src="./assets/img/case-lab-1600.jpg"
+            alt="University R&amp;D data sculpture prototype"
+          />
+        </div>
+        <div class="case-copy">
+          <h3>University Lab — Data Sculpture Prototype</h3>
+          <p>
+            Research partners often don’t “see” the value.
+            We built a physical data sculpture driven by live research feeds,
+            so industry partners could understand in 30 seconds what normally
+            takes 30 slides.
+          </p>
+          <p class="impact">
+            <strong>Use case:</strong> tech transfer and funding conversations.
+          </p>
+        </div>
+      </article>
+
     </div>
-  </div>
-</section>
+  </section>
 
-<!-- ================= REFERENCES ================= -->
-<section class="scene-cases" id="examples">
-  <div class="container">
-    <h2 class="cases-head">Selected References</h2>
-    <p class="cases-lead">
-      Delivered projects and prototypes illustrating our scope — energy, climate and public education.
-    </p>
 
-    <article class="case-block fade-block">
-      <div class="case-badge delivered">Delivered</div>
-      <div class="case-media">
-        <img src="./assets/img/case-energy-1600.png"
-             alt="The Energy Flower — kinetic sculpture visualising live grid data"/>
-      </div>
-      <div class="case-copy">
-        <h3>The Energy Flower (Fingrid)</h3>
-        <p>National grid operator visualised energy flow for non-engineers.  
-           Live data became a kinetic light sculpture showing the system breathing.</p>
-        <p class="impact"><strong>Impact:</strong> faster and calmer stakeholder dialogue.</p>
-      </div>
-    </article>
+  <!-- ================= CONTACT ================= -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <h2>Ready to make your story tangible?</h2>
 
-    <article class="case-block fade-block">
-      <div class="case-badge proto">Prototype</div>
-      <div class="case-media">
-        <img src="./assets/img/case-sea-1600.jpg"
-             alt="Immersive oceans/climate visualisation environment"/>
-      </div>
-      <div class="case-copy">
-        <h3>Climate &amp; Oceans — Concept Study</h3>
-        <p>We translated ocean data into light and motion so partners could see why it matters.</p>
-      </div>
-    </article>
-  </div>
-</section>
+      <p><strong>Email:</strong> <a href="mailto:tomi.paijo@kontai.art">tomi.paijo@kontai.art</a></p>
+      <p><strong>Locations:</strong> Helsinki · Stockholm · Hamburg</p>
 
-<!-- ================= CONTACT ================= -->
-<section class="section contact" id="contact">
-  <div class="container">
-    <h2>Ready to make your story tangible?</h2>
-    <p><strong>Email:</strong> <a href="mailto:tomi.paijo@kontai.art">tomi.paijo@kontai.art</a></p>
-    <p><strong>Locations:</strong> Helsinki · Stockholm · Hamburg</p>
-    <p>
-      <a class="btn btn-primary" href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request">Book a demo</a>
-    </p>
-  </div>
-</section>
+      <p>
+        <a
+          class="btn btn-primary"
+          href="mailto:tomi.paijo@kontai.art?subject=Showroom%20demo%20request"
+        >Book a demo</a>
+      </p>
+    </div>
+  </section>
 
 </main>
+
 </body>
 </html>
