@@ -1,4 +1,4 @@
-// Fade-in blocks when they enter viewport
+// Fade-in animation blocks (optional future use)
 const fadeBlocks = [...document.querySelectorAll('.fade-block')];
 const fadeObs = new IntersectionObserver(entries=>{
   entries.forEach(e=>{
@@ -10,7 +10,7 @@ const fadeObs = new IntersectionObserver(entries=>{
 },{threshold:0.2});
 fadeBlocks.forEach(el=>fadeObs.observe(el));
 
-// Smooth scroll for in-page nav
+// Smooth scroll navigation
 document.querySelectorAll('a[href^="#"]').forEach(link=>{
   link.addEventListener('click',e=>{
     const target=document.querySelector(link.getAttribute('href'));
@@ -21,20 +21,25 @@ document.querySelectorAll('a[href^="#"]').forEach(link=>{
   });
 });
 
-// Hero video fallback handling
-const heroVideo = document.querySelector('.scene-hero-video');
-const heroFallback = document.querySelector('.scene-hero-fallback');
+// ✅ HERO VIDEO FAIL-SAFE INITIALIZATION
+(function(){
+  const video=document.querySelector('.scene-hero-video');
+  const fallback=document.querySelector('.scene-hero-fallback');
+  if(!video||!fallback)return;
 
-// some browsers block autoplay until they confirm it's actually playing
-if (heroVideo && heroFallback) {
-  heroVideo.addEventListener('playing', () => {
-    // video is actually running → hide fallback still
-    heroFallback.style.display = 'none';
-  });
-
-  heroVideo.addEventListener('error', () => {
-    // video can't play → hide video, keep fallback
-    heroVideo.style.display = 'none';
-    heroFallback.style.display = 'block';
-  });
-}
+  const playAttempt=video.play();
+  if(playAttempt!==undefined){
+    playAttempt.then(()=>{
+      video.addEventListener('playing',()=>{
+        video.style.display='block';
+        fallback.style.display='none';
+      },{once:true});
+    }).catch(()=>{
+      video.style.display='none';
+      fallback.style.display='block';
+    });
+  }else{
+    video.style.display='none';
+    fallback.style.display='block';
+  }
+})();
