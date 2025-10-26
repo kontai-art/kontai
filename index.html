@@ -8,8 +8,9 @@
 
   <meta name="description" content="Kontai builds interactive showrooms, immersive experience spaces and real-time data installations that help organisations explain energy, climate, infrastructure and innovation in a way people actually understand. Finland · Sweden." />
 
-  <link rel="stylesheet" href="styles.css" />
-  <script defer src="app.js"></script>
+  <!-- IMPORTANT: use absolute path with /kontai/ so GitHub Pages can load CSS -->
+  <link rel="stylesheet" href="/kontai/styles.css" />
+  <script defer src="/kontai/app.js"></script>
 </head>
 
 <body>
@@ -24,7 +25,6 @@
         <a href="#projects">Projects</a>
         <a href="#about">About</a>
         <a href="#legal">Legal</a>
-        <!-- blog link placeholder for SEO / future content marketing -->
         <a href="#blog">Blog</a>
         <a href="#contact" class="btn-small">Request proposal →</a>
       </nav>
@@ -33,10 +33,10 @@
 
   <main>
 
-    <!-- HERO (unchanged content-wise except CTA + no plain email) -->
+    <!-- HERO -->
     <section id="hero" class="hero">
       <div class="container hero-inner">
-        <div class="hero-kicker">Interactive Spaces & Decision Rooms</div>
+        <div class="hero-kicker">Interactive Spaces &amp; Decision Rooms</div>
 
         <h1>
           We design and build immersive showrooms and data-driven spaces
@@ -59,7 +59,7 @@
         </div>
 
         <p class="hero-footnote">
-          Energy & Infrastructure · Sustainability & Climate · Innovation & R&amp;D · Public / Culture
+          Energy &amp; Infrastructure · Sustainability &amp; Climate · Innovation &amp; R&amp;D · Public / Culture
         </p>
       </div>
     </section>
@@ -78,7 +78,7 @@
         <div class="whatwedo-grid">
           <!-- Product 1 -->
           <div class="whatwedo-card fade-block">
-            <img loading="lazy" src="./assets/img/service-decisionroom-1600.jpg" alt="Executive decision room with realtime data wall" />
+            <img loading="lazy" src="/kontai/assets/img/service-decisionroom-1600.jpg" alt="Executive decision room with realtime data wall" />
             <div class="whatwedo-card-body">
               <h3>Executive / Crisis / Strategy Rooms</h3>
               <p>
@@ -94,7 +94,7 @@
 
           <!-- Product 2 -->
           <div class="whatwedo-card fade-block">
-            <img loading="lazy" src="./assets/img/service-showroom-1600.jpg" alt="Portable interactive showroom setup" />
+            <img loading="lazy" src="/kontai/assets/img/service-showroom-1600.jpg" alt="Portable interactive showroom setup" />
             <div class="whatwedo-card-body">
               <h3>Portable Interactive Showrooms</h3>
               <p>
@@ -110,7 +110,7 @@
 
           <!-- Product 3 -->
           <div class="whatwedo-card fade-block">
-            <img loading="lazy" src="./assets/img/service-publicspace-1600.jpg" alt="Immersive climate and oceans room with reactive light" />
+            <img loading="lazy" src="/kontai/assets/img/service-publicspace-1600.jpg" alt="Immersive climate and oceans room with reactive light" />
             <div class="whatwedo-card-body">
               <h3>Public-Facing Immersive Rooms</h3>
               <p>
@@ -126,7 +126,7 @@
 
           <!-- Product 4 -->
           <div class="whatwedo-card fade-block">
-            <img loading="lazy" src="./assets/img/service-livewall-1600.jpg" alt="Realtime sustainability dashboard wall" />
+            <img loading="lazy" src="/kontai/assets/img/service-livewall-1600.jpg" alt="Realtime sustainability dashboard wall" />
             <div class="whatwedo-card-body">
               <h3>Live Data Installations</h3>
               <p>
@@ -185,17 +185,17 @@
 
         <div class="howwedoit-visuals">
           <div class="how-card fade-block">
-            <img loading="lazy" src="./assets/img/how-spaceplan-1200.jpg" alt="Spatial planning sketch for an interactive room" />
+            <img loading="lazy" src="/kontai/assets/img/how-spaceplan-1200.jpg" alt="Spatial planning sketch for an interactive room" />
             <p class="how-caption">Spatial planning: flow, sightlines, attention control.</p>
           </div>
 
           <div class="how-card fade-block">
-            <img loading="lazy" src="./assets/img/how-datavis-1200.jpg" alt="Live data visualisation integrated into physical installation" />
+            <img loading="lazy" src="/kontai/assets/img/how-datavis-1200.jpg" alt="Live data visualisation integrated into physical installation" />
             <p class="how-caption">Live data visualisation embedded in physical structure.</p>
           </div>
 
           <div class="how-card fade-block">
-            <img loading="lazy" src="./assets/img/how-execbrief-1200.jpg" alt="Executive briefing environment with interactive decision support" />
+            <img loading="lazy" src="/kontai/assets/img/how-execbrief-1200.jpg" alt="Executive briefing environment with interactive decision support" />
             <p class="how-caption">Executive briefing environments for high-stakes conversations.</p>
           </div>
         </div>
@@ -210,13 +210,13 @@
         <!-- Energy Flower / national grid operator -->
         <article class="project-row fade-block">
           <div class="project-media">
-            <img loading="lazy" src="./assets/img/case-fingrid-1600.png" alt="The Energy Flower installation reacting to national grid data" />
+            <img loading="lazy" src="/kontai/assets/img/case-fingrid-1600.png" alt="The Energy Flower installation reacting to national grid data" />
           </div>
           <div class="project-copy">
             <div class="badge delivered">Delivered</div>
             <h3>The Energy Flower — National Grid Operator</h3>
             <p>
-              The national grid operator needed to explain “how electricity moves”
+              A national grid operator needed to explain “how electricity moves”
               to the public, schools, press and decision-makers.
             </p>
             <p>
@@ -234,11 +234,11 @@
         <!-- Climate & Oceans Room -->
         <article class="project-row fade-block">
           <div class="project-media">
-            <img loading="lazy" src="./assets/img/case-sea-1600.png" alt="Immersive climate and oceans data room" />
+            <img loading="lazy" src="/kontai/assets/img/case-sea-1600.png" alt="Immersive climate and oceans data room" />
           </div>
           <div class="project-copy">
             <div class="badge inprogress">In Progress</div>
-            <h3>Climate & Oceans Room</h3>
+            <h3>Climate &amp; Oceans Room</h3>
             <p>
               A travelling immersive room where marine science, climate impact
               and human dependency on oceans are made emotionally visible through
@@ -258,7 +258,7 @@
         <!-- Sustainability Wall -->
         <article class="project-row fade-block">
           <div class="project-media">
-            <img loading="lazy" src="./assets/img/case-sustainability-1600.png" alt="Live sustainability metrics wall" />
+            <img loading="lazy" src="/kontai/assets/img/case-sustainability-1600.png" alt="Live sustainability metrics wall" />
           </div>
           <div class="project-copy">
             <div class="badge concept">Concept Pilot</div>
@@ -282,7 +282,7 @@
         <!-- University Lab -->
         <article class="project-row fade-block">
           <div class="project-media">
-            <img loading="lazy" src="./assets/img/case-lab-1600.jpg" alt="Living data sculpture in lab" />
+            <img loading="lazy" src="/kontai/assets/img/case-lab-1600.jpg" alt="Living data sculpture in lab" />
           </div>
           <div class="project-copy">
             <div class="badge proto">Prototype</div>
@@ -341,11 +341,11 @@
           <div class="about-card">
             <h3>Where we work</h3>
             <ul class="about-list">
-              <li>Energy & infrastructure</li>
-              <li>Climate & sustainability</li>
-              <li>Research & education</li>
-              <li>Industry & innovation</li>
-              <li>Culture & public sector</li>
+              <li>Energy &amp; infrastructure</li>
+              <li>Climate &amp; sustainability</li>
+              <li>Research &amp; education</li>
+              <li>Industry &amp; innovation</li>
+              <li>Culture &amp; public sector</li>
             </ul>
           </div>
         </div>
@@ -424,14 +424,14 @@
             <a href="#whatwedo">Services</a>
             <a href="#howwedoit">Method</a>
             <a href="#projects">Projects</a>
-            <a href="#legal">Privacy & Terms</a>
+            <a href="#legal">Privacy &amp; Terms</a>
             <a href="#contact">Contact</a>
           </nav>
         </div>
 
         <div class="footer-bottom">
           <div class="footer-legal">
-            © 2025 Kontai Oy — Interactive Showrooms & Immersive Spaces.
+            © 2025 Kontai Oy — Interactive Showrooms &amp; Immersive Spaces.
             Privacy-safe by design. EU hosting.
           </div>
         </div>

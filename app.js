@@ -1,4 +1,4 @@
-// fade-in blocks on scroll
+// fade-in animation for .fade-block elements
 const fades = [...document.querySelectorAll('.fade-block')];
 const io = new IntersectionObserver(entries => {
   entries.forEach(entry => {
@@ -10,7 +10,7 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 fades.forEach(el => io.observe(el));
 
-// smooth scroll for nav with sticky header offset behavior handled via CSS scroll-margin-top
+// smooth scroll for nav links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     const target = document.querySelector(link.getAttribute('href'));
