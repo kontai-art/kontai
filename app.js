@@ -10,7 +10,7 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 fades.forEach(el => io.observe(el));
 
-// smooth scroll for nav
+// smooth scroll for nav with sticky header offset behavior handled via CSS scroll-margin-top
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     const target = document.querySelector(link.getAttribute('href'));
