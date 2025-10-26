@@ -10,7 +10,7 @@ const io = new IntersectionObserver(entries => {
 }, { threshold: 0.2 });
 fades.forEach(el => io.observe(el));
 
-// smooth scroll for internal links
+// smooth scroll for internal nav links
 document.querySelectorAll('a[href^="#"]').forEach(link => {
   link.addEventListener('click', e => {
     const target = document.querySelector(link.getAttribute('href'));
