@@ -4,153 +4,287 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Kontai — Experience Spaces & Showrooms</title>
-  <meta name="description" content="Kontai creates interactive showrooms and experience spaces where data, technology and storytelling connect — helping people see, feel and act." />
+  <meta name="description" content="Kontai creates interactive showrooms and experience spaces where complex ideas become clear, physical and convincing." />
   <link rel="stylesheet" href="styles.css" />
   <script defer src="app.js"></script>
 </head>
 
 <body>
-<header class="site-header">
-  <div class="container nav">
-    <a href="#hero" class="logo">KONTAI</a>
-    <nav class="mainnav">
-      <a href="#hero">Home</a>
-      <a href="#whatwedo">What We Do</a>
-      <a href="#cases">Projects</a>
-      <a href="#contact">Contact</a>
-    </nav>
-    <a href="mailto:tomi.paijo@kontai.art" class="btn btn-primary small">Book a demo</a>
-  </div>
-</header>
+  <!-- HEADER -->
+  <header class="site-header">
+    <div class="container nav">
+      <a href="#hero" class="logo">KONTAI</a>
 
-<!-- ✅ HERO -->
-<section class="scene-hero" id="hero">
-  <div class="scene-hero-bg">
-    <img src="./assets/img/hero-1920.jpg" alt="Kontai interactive showroom background" />
-    <div class="scene-hero-overlay"></div>
-  </div>
-  <div class="scene-hero-inner container">
-    <h1>
-      We create <span class="accent">experience spaces</span><br/>
-      that turn your message into something people can feel.
-    </h1>
-    <p class="scene-hero-lead">
-      Showrooms where data and complex ideas transform into clear experiences that move people to act.
-    </p>
-    <div class="hero-impact-lines">
-      <div>Clarity builds trust.</div>
-      <div>Trust drives decisions.</div>
-      <div>Decisions move people forward.</div>
+      <nav class="mainnav">
+        <a href="#hero">Home</a>
+        <a href="#whatwedo">What We Do</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <a href="mailto:tomi.paijo@kontai.art" class="btn btn-primary small">
+        Book a demo
+      </a>
     </div>
-    <div class="scene-hero-cta">
-      <a href="mailto:tomi.paijo@kontai.art" class="btn btn-primary">Book a demo</a>
-      <a href="#whatwedo" class="btn btn-ghost">Explore ↓</a>
-    </div>
-  </div>
-</section>
+  </header>
 
-<!-- ✅ WHAT WE DO -->
-<section id="whatwedo" class="whatwedo">
-  <div class="container">
-    <h2>What We Do</h2>
-    <p class="intro">
-      We design and build interactive spaces that make complex information tangible.  
-      Each project combines light, motion, sound and live data — turning ideas into experiences that inform, inspire and convince.
-    </p>
+  <main>
 
-    <div class="grid">
-      <div class="card fade-block">
-        <img src="./assets/img/case-energy-1600.png" alt="Energy data visualization installation" />
-        <h3>Energy & Infrastructure</h3>
-        <p>
-          Real-time installations that visualize national energy flow and production in motion.  
-          Visitors can see how renewable sources interact with the grid — turning technical data into intuitive understanding.
-        </p>
+    <!-- HERO -->
+    <section class="scene-hero" id="hero">
+      <div class="scene-hero-bg">
+        <img src="./assets/img/hero-1920.jpg" alt="Immersive light environment" />
+        <div class="scene-hero-overlay"></div>
       </div>
 
-      <div class="card fade-block">
-        <img src="./assets/img/case-climate-1600.jpg" alt="Climate and ocean installation" />
-        <h3>Climate & Oceans</h3>
-        <p>
-          Immersive visualizations for museums and research centers.  
-          Light and sound respond to environmental data — translating science into emotional experience that stays with the audience.
+      <div class="scene-hero-inner container">
+        <h1 class="hero-headline">
+          We create <span class="accent">experience spaces</span><br/>
+          that turn your message into something people can feel.
+        </h1>
+
+        <p class="hero-lead">
+          Showrooms where data and complex ideas transform into clear experiences that move people to act.
+        </p>
+
+        <div class="hero-impact">
+          <div>Clarity builds trust.</div>
+          <div>Trust drives decisions.</div>
+          <div>Decisions move people forward.</div>
+        </div>
+
+        <div class="hero-cta">
+          <a href="mailto:tomi.paijo@kontai.art" class="btn btn-primary">Book a demo</a>
+          <a href="#whatwedo" class="btn btn-ghost">How it works ↓</a>
+        </div>
+
+        <p class="hero-footnote">
+          Energy & Infrastructure · Sustainability & Climate · Innovation & R&amp;D · Public / Culture
         </p>
       </div>
+    </section>
 
-      <div class="card fade-block">
-        <img src="./assets/img/case-showroom-1600.jpg" alt="Corporate showroom interactive experience" />
-        <h3>Innovation & Industry</h3>
+    <!-- WHAT WE DO -->
+    <section id="whatwedo" class="section-whatwedo">
+      <div class="container">
+        <h2>What We Do</h2>
+
+        <p class="whatwedo-intro">
+          We build interactive spaces that make complex information tangible.  
+          We use light, motion, sound and live data to turn invisible systems into something visitors can understand, remember and act on.
+        </p>
+
+        <div class="whatwedo-grid">
+          <!-- Card 1 -->
+          <div class="whatwedo-card fade-block">
+            <img src="./assets/img/case-energy-1600.png" alt="Energy and grid visualization installation" />
+            <div class="whatwedo-card-body">
+              <h3>Energy & Infrastructure</h3>
+              <p>
+                Real-time visualisations of power generation, grid load and energy flow.  
+                People can “see” how the system works in seconds.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="whatwedo-card fade-block">
+            <img src="./assets/img/case-sea-1600.png" alt="Climate and oceans immersive environment" />
+            <div class="whatwedo-card-body">
+              <h3>Climate & Oceans</h3>
+              <p>
+                Spaces where climate data becomes light, colour and sound.  
+                Science turns into an emotional experience people don’t forget.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="whatwedo-card fade-block">
+            <img src="./assets/img/case-boardroom-1600.png" alt="Interactive boardroom demo" />
+            <div class="whatwedo-card-body">
+              <h3>Innovation & Industry</h3>
+              <p>
+                Portable “touch the system” showrooms for leadership, partners and investors.  
+                Instead of slides, they try it themselves.
+              </p>
+            </div>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="whatwedo-card fade-block">
+            <img src="./assets/img/case-sustainability-1600.png" alt="Sustainability engagement wall" />
+            <div class="whatwedo-card-body">
+              <h3>Sustainability & ESG</h3>
+              <p>
+                Live-impact walls that show CO₂, efficiency and recycling data.  
+                Teams and visitors see the impact of their choices in real time.
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- PROJECTS / REFERENCES -->
+    <section id="projects" class="section-projects">
+      <div class="container">
+        <h2>Selected Projects</h2>
+
+        <!-- Fingrid / Energy Flower -->
+        <article class="project-row fade-block">
+          <div class="project-media">
+            <img src="./assets/img/case-fingrid-1600.png" alt="The Energy Flower installation" />
+          </div>
+          <div class="project-copy">
+            <div class="badge delivered">Delivered</div>
+            <h3>The Energy Flower (Fingrid)</h3>
+            <p>
+              The national grid operator needed to explain “how electricity moves” to the public, schools, press and decision-makers.
+            </p>
+            <p>
+              We built a kinetic light sculpture that pulses with live grid data.  
+              When demand spikes, the sculpture “breathes” faster.  
+              When renewables increase, colour shifts.
+            </p>
+            <p class="impact-line">
+              <strong>Impact:</strong> Easier stakeholder talks, calmer energy discussions, longer visitor engagement.
+            </p>
+          </div>
+        </article>
+
+        <!-- Climate & Oceans Room -->
+        <article class="project-row fade-block">
+          <div class="project-media">
+            <img src="./assets/img/case-sea-1600.png" alt="Immersive climate and oceans data room" />
+          </div>
+          <div class="project-copy">
+            <div class="badge proto">Prototype</div>
+            <h3>Climate &amp; Oceans — Immersive Room</h3>
+            <p>
+              Research teams needed funding support. Charts weren’t creating urgency.
+            </p>
+            <p>
+              We turned climate and ocean data (temperature, acidity) into a responsive space.  
+              The room itself “warms” as the sea warms.
+            </p>
+            <p class="impact-line">
+              <strong>Impact:</strong> Funders said “now I finally see it.”  
+              Helped open new funding conversations.
+            </p>
+          </div>
+        </article>
+
+        <!-- Visitor Wall / Utility Centre -->
+        <article class="project-row fade-block">
+          <div class="project-media">
+            <img src="./assets/img/case-utility-1600.png" alt="Interactive utility visitor wall" />
+          </div>
+          <div class="project-copy">
+            <div class="badge anon">Anonymised</div>
+            <h3>Energy Visitor Wall — Utility Centre</h3>
+            <p>
+              The visitor centre felt like homework, and people left confused.
+            </p>
+            <p>
+              We built a long glowing wall where “light is electricity.”  
+              Touch wind → see where it flows. Touch nuclear → follow the path.
+            </p>
+            <p class="impact-line">
+              <strong>Impact:</strong> ~2× visitor dwell time.  
+              Satisfaction rose from 3.1 → 4.8/5.  
+              Guides spend less time reteaching basics.
+            </p>
+          </div>
+        </article>
+
+        <!-- Boardroom Demo -->
+        <article class="project-row fade-block">
+          <div class="project-media">
+            <img src="./assets/img/case-boardroom-1600.png" alt="Portable boardroom demo system" />
+          </div>
+          <div class="project-copy">
+            <div class="badge indev">In Development</div>
+            <h3>Boardroom Demo — “Touch the System”</h3>
+            <p>
+              Leadership had to sign off on a complex platform.  
+              Slides weren’t landing.
+            </p>
+            <p>
+              We built a portable interactive setup for the boardroom.  
+              Move your hand — the projected system reacts live.
+            </p>
+            <p class="impact-line">
+              <strong>Impact:</strong> Decisions in days instead of weeks.  
+              Internal resistance dropped.
+            </p>
+          </div>
+        </article>
+
+        <!-- Sustainability Wall -->
+        <article class="project-row fade-block">
+          <div class="project-media">
+            <img src="./assets/img/case-sustainability-1600.png" alt="Live sustainability metrics wall" />
+          </div>
+          <div class="project-copy">
+            <div class="badge concept">Concept Pilot</div>
+            <h3>Sustainability Hub — Live Metrics Wall</h3>
+            <p>
+              “We’re sustainable” wasn’t convincing investors or staff.
+            </p>
+            <p>
+              We built a wall that changes colour and pattern based on live CO₂, recycling and efficiency data.  
+              Teams can literally see their own footprint improving.
+            </p>
+            <p class="impact-line">
+              <strong>Impact:</strong> Stronger employer brand.  
+              Easier ESG storytelling.  
+              Reusable visuals for investor meetings.
+            </p>
+          </div>
+        </article>
+
+        <!-- University Lab -->
+        <article class="project-row fade-block">
+          <div class="project-media">
+            <img src="./assets/img/case-lab-1600.jpg" alt="Living data sculpture in lab" />
+          </div>
+          <div class="project-copy">
+            <div class="badge proto">Prototype</div>
+            <h3>University Lab — Living Data Sculpture</h3>
+            <p>
+              Researchers needed industry partners to “get it” — without 30 slides of theory.
+            </p>
+            <p>
+              We built a hanging sculpture that pulses and shifts colour with live research data.  
+              When something important happens in the data, you see it.
+            </p>
+            <p class="impact-line">
+              <strong>Impact:</strong> Opened partner talks faster.  
+              Helped science feel real and fundable.
+            </p>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section-contact">
+      <div class="container">
+        <h2>Contact</h2>
         <p>
-          Modular showrooms that connect physical objects to real data.  
-          Touch, movement or sensors trigger stories — helping teams, investors and clients see progress and value instantly.
+          <strong>Email:</strong> <a href="mailto:tomi.paijo@kontai.art">tomi.paijo@kontai.art</a><br/>
+          <strong>Location:</strong> Finland · Sweden
+        </p>
+        <p class="legal">
+          © 2025 Kontai Oy — Experience Spaces & Showrooms  
+          Privacy-safe analytics. EU hosting. Clear install & safety documentation.
         </p>
       </div>
+    </section>
 
-      <div class="card fade-block">
-        <img src="./assets/img/case-event-1600.jpg" alt="Event and exhibition activation" />
-        <h3>Events & Public Engagement</h3>
-        <p>
-          Adaptive installations for fairs, expos and festivals.  
-          Designed for scalability and transport — engaging audiences, sponsors and partners through memorable experiences.
-        </p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ✅ CASES / PROJECTS -->
-<section id="cases" class="cases">
-  <div class="container">
-    <h2>Selected Projects</h2>
-
-    <div class="case fade-block">
-      <img src="./assets/img/case-energy-1600.png" alt="Energy Flower installation" />
-      <div class="case-text">
-        <h3>Energy Flower</h3>
-        <p>
-          A live energy visualization developed with Fingrid.  
-          The installation turns national grid data into movement, color and rhythm — creating an ambient pulse of the country's energy in real time.
-        </p>
-        <p><strong>Impact:</strong> Enhanced public understanding of renewable balance and energy flow, increased dwell time at exhibitions by +40%.</p>
-      </div>
-    </div>
-
-    <div class="case fade-block">
-      <img src="./assets/img/case-climate-1600.jpg" alt="Sea of Life museum installation" />
-      <div class="case-text">
-        <h3>Sea of Life</h3>
-        <p>
-          Immersive storytelling installation merging marine science and art.  
-          Real-time ocean data and soundscapes bring audiences closer to the invisible forces that sustain life underwater.
-        </p>
-        <p><strong>Impact:</strong> Improved visitor engagement metrics, used by researchers and educators for public outreach.</p>
-      </div>
-    </div>
-
-    <div class="case fade-block">
-      <img src="./assets/img/case-showroom-1600.jpg" alt="Industrial digital twin showroom" />
-      <div class="case-text">
-        <h3>Digital Twin Showroom</h3>
-        <p>
-          Interactive 3D showroom for a technology client.  
-          Visitors explore products through touch-based and sensor-driven interfaces — blending physical and digital layers seamlessly.
-        </p>
-        <p><strong>Impact:</strong> Shortened sales cycle, stronger investor communication, and measurable visitor retention growth.</p>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ✅ CONTACT -->
-<section id="contact" class="contact">
-  <div class="container">
-    <h2>Contact</h2>
-    <p>
-      <strong>Email:</strong> <a href="mailto:tomi.paijo@kontai.art">tomi.paijo@kontai.art</a><br/>
-      <strong>Location:</strong> Finland / Sweden
-    </p>
-    <p class="small">© 2025 Kontai Oy — Experience Spaces & Showrooms</p>
-  </div>
-</section>
+  </main>
 </body>
 </html>

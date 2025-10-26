@@ -1,22 +1,22 @@
-// Scroll fade-in effect
-const fadeBlocks=[...document.querySelectorAll('.fade-block')];
-const obs=new IntersectionObserver(entries=>{
-  entries.forEach(e=>{
-    if(e.isIntersecting){
-      e.target.classList.add('visible');
-      obs.unobserve(e.target);
+// fade-in blocks on scroll
+const fades = [...document.querySelectorAll('.fade-block')];
+const io = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      entry.target.classList.add('visible');
+      io.unobserve(entry.target);
     }
   });
-},{threshold:0.2});
-fadeBlocks.forEach(el=>obs.observe(el));
+}, { threshold: 0.2 });
+fades.forEach(el => io.observe(el));
 
-// Smooth scroll nav
-document.querySelectorAll('a[href^="#"]').forEach(link=>{
-  link.addEventListener('click',e=>{
-    const target=document.querySelector(link.getAttribute('href'));
-    if(target){
+// smooth scroll for internal links
+document.querySelectorAll('a[href^="#"]').forEach(link => {
+  link.addEventListener('click', e => {
+    const target = document.querySelector(link.getAttribute('href'));
+    if (target) {
       e.preventDefault();
-      target.scrollIntoView({behavior:'smooth'});
+      target.scrollIntoView({ behavior: 'smooth' });
     }
   });
 });
